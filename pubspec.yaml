@@ -33,6 +33,8 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
+  animate_do: ^3.0.2
+  card_swiper: ^2.0.4
   dio: ^5.1.2
   flutter_dotenv: ^5.0.2
   flutter_lints: ^2.0.0
