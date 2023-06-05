@@ -11,7 +11,7 @@ class MoviesSlideShow extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     return SizedBox(
-      height: 210,
+      height: 190,
       width: double.infinity,
       child: Swiper(
         pagination: SwiperPagination(
@@ -56,14 +56,14 @@ class _Slide extends StatelessWidget {
 
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: 30),
+      padding: const EdgeInsets.only(bottom: 20),
       child: DecoratedBox(
         decoration: decoration,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: Image.network(movie.backdropPath, fit: BoxFit.cover, loadingBuilder: (context, child, loadingProgress) {
             if (loadingProgress != null){
-              return DecoratedBox(decoration: BoxDecoration(color: Colors.black12));
+              return const DecoratedBox(decoration: BoxDecoration(color: Colors.black12));
             }
             return FadeIn(child: child);
           },),

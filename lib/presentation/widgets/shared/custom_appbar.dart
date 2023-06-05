@@ -11,7 +11,7 @@ class CustomAppbar extends StatelessWidget {
     return SafeArea(
     
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         
         
         child: SizedBox(
@@ -20,9 +20,9 @@ class CustomAppbar extends StatelessWidget {
             children: [
               Icon(Icons.movie_outlined, color: colors.primary,),
               const SizedBox(width: 5,),
-              Text('Cinemapedia', style: titleStyle,),
+              Text('AppPelis', style: titleStyle,),
               const Spacer(),
-              IconButton(onPressed: (){}, icon: Icon(Icons.search))
+              IconButton(onPressed: (){}, icon: const Icon(Icons.search))
             ],
           ),
         ),
